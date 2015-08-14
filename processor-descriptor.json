@@ -1,0 +1,5 @@
+{
+  "name": "circleci/test",
+  "command": "python processor_wrapper.py",
+  "consumes" : [{"dataType": "circleci/test"}]
+}
