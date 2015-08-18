@@ -10,7 +10,7 @@ def data_file_path(file_name):
 
 
 class TestProcessor(unittest.TestCase):
-    def test_jenkins_tests1(self):
+    def test_circleci_tests1(self):
         custom_metadata = {'SCM_BRANCH': 'master', 'SCM_REPO_NAME': 'jenkins-tests-processor',
                            'SCM_URL': 'https://github.com/gaia-adm/jenkins-tests-processor', 'BUILD_URI': 'https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12',
                            'BUILD_NUMBER': '12',
