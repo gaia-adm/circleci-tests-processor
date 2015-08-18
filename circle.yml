@@ -6,7 +6,8 @@ dependencies:
     - docker build -t gaiaadm/circleci-tests-processor:$BUILD_TAG .
 test:
   override:
-    - /bin/true
+    - docker run --name unit-test-runner gaiaadm/circleci-tests-processor:$BUILD_TAG /bin/sh -c "cd /src/processors/circleci-tests-processor && nosetests --with-xunit"
+    - docker cp unit-test-runner:/src/processors/circleci-tests-processor/nosetests.xml $CIRCLE_TEST_REPORTS
 deployment:
   hub:
     branch: master

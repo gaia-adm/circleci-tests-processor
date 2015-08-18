@@ -1,0 +1,78 @@
+[
+  {
+    "tags": {
+      "build_result": "success",
+      "source_type": "python"
+    },
+    "id": {
+      "class": "processFile",
+      "build_number": "12",
+      "method": "processors tests processFile produce-invalid-objects",
+      "file": null
+    },
+    "source": {
+      "repository": "https://github.com/gaia-adm/jenkins-tests-processor",
+      "branch": "master",
+      "build_uri": "https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12",
+      "job_name": "jenkins-tests-processor"
+    },
+    "time": "2015-08-18T08:59:27+00:00",
+    "event": "code_testrun",
+    "result": {
+      "status": "success",
+      "error": null,
+      "run_time": 0.103
+    }
+  },
+  {
+    "tags": {
+      "build_result": "success",
+      "source_type": "nodejs"
+    },
+    "id": {
+      "class": "startup & shutdown",
+      "build_number": "12",
+      "method": "manager tests startup & shutdown startup with path without processors",
+      "file": null
+    },
+    "source": {
+      "repository": "https://github.com/gaia-adm/jenkins-tests-processor",
+      "branch": "master",
+      "build_uri": "https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12",
+      "job_name": "jenkins-tests-processor"
+    },
+    "time": "2015-08-18T08:59:27+00:00",
+    "event": "code_testrun",
+    "result": {
+      "status": "success",
+      "error": null,
+      "run_time": 0.008
+    }
+  },
+  {
+    "tags": {
+      "build_result": "success",
+      "source_type": "nosetests"
+    },
+    "id": {
+      "class": "TestProcessor",
+      "build_number": "12",
+      "method": "test_jenkins_tests1",
+      "file": null,
+      "package": "test_processor"
+    },
+    "source": {
+      "repository": "https://github.com/gaia-adm/jenkins-tests-processor",
+      "branch": "master",
+      "build_uri": "https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12",
+      "job_name": "jenkins-tests-processor"
+    },
+    "time": "2015-08-18T08:59:27+00:00",
+    "event": "code_testrun",
+    "result": {
+      "status": "success",
+      "error": null,
+      "run_time": 0.104
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "classname": "processFile",
+      "name": "processors tests processFile produce-invalid-objects",
+      "result": "success",
+      "run_time": 0.103,
+      "source": "unknown",
+      "file": null,
+      "message": null,
+      "source_type": "python"
+    },
+    {
+      "classname": "startup & shutdown",
+      "name": "manager tests startup & shutdown startup with path without processors",
+      "result": "success",
+      "run_time": 0.008,
+      "source": "unknown",
+      "file": null,
+      "message": null,
+      "source_type": "nodejs"
+    },
+    {
+      "source_type": "nosetests",
+      "source": "nosetests",
+      "classname": "test_processor.TestProcessor",
+      "file": null,
+      "name": "test_jenkins_tests1",
+      "result": "success",
+      "run_time": 0.104,
+      "message": null
+    }
+  ]
+}

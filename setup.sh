@@ -41,6 +41,9 @@ function setup_processor()
     # install any data processor dependencies here
     pip install ijson
     pip install python-dateutil
+    # test dependencies
+    pip install testfixtures
+    pip install nose
 }
 
 setup_proxy
