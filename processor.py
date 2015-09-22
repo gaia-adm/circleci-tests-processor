@@ -57,7 +57,7 @@ def create_test_execution_event(content_metadata, custom_metadata, test_executio
     # tags
     tags = {}
     tags['build_result'] = custom_metadata.get('BUILD_STATUS')
-    tags['source_type'] = test_execution['source_type']
+    tags['test_source'] = test_execution['source_type']
     test_run_event['tags'] = tags
     # id part
     id = {}

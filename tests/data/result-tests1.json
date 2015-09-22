@@ -2,7 +2,7 @@
   {
     "tags": {
       "build_result": "success",
-      "source_type": "python"
+      "test_source": "python"
     },
     "id": {
       "class": "processFile",
@@ -30,7 +30,7 @@
   {
     "tags": {
       "build_result": "success",
-      "source_type": "nodejs"
+      "test_source": "nodejs"
     },
     "id": {
       "class": "startup & shutdown",
@@ -58,7 +58,7 @@
   {
     "tags": {
       "build_result": "success",
-      "source_type": "nosetests"
+      "test_source": "nosetests"
     },
     "id": {
       "class": "TestProcessor",
