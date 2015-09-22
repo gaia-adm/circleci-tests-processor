@@ -4,6 +4,7 @@ import signal
 import json
 from dateutil.parser import parse as parseDateTime
 from utils import get_params
+from urllib.parse import urlparse
 
 def get_json_parser():
     """
@@ -45,10 +46,13 @@ def create_test_execution_event(content_metadata, custom_metadata, test_executio
     test_run_event['time'] = dateTime.isoformat()
     # source
     source = {}
+    source['build_server_uri'] = custom_metadata['BUILD_SERVER_URI']
+    source['build_server_host'] = urlparse(custom_metadata['BUILD_SERVER_URI']).hostname
     source['build_uri'] = custom_metadata.get('BUILD_URI')
     source['job_name'] = custom_metadata.get('SCM_REPO_NAME')
     source['repository'] = custom_metadata.get('SCM_URL')
     source['branch'] = custom_metadata.get('SCM_BRANCH')
+    source['source_type'] = 'circleci'
     test_run_event['source'] = source
     # tags
     tags = {}

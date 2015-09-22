@@ -13,8 +13,11 @@
     "source": {
       "repository": "https://github.com/gaia-adm/jenkins-tests-processor",
       "branch": "master",
+      "build_server_uri": "https://circleci.com",
+      "build_server_host": "circleci.com",
       "build_uri": "https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12",
-      "job_name": "jenkins-tests-processor"
+      "job_name": "jenkins-tests-processor",
+      "source_type": "circleci"
     },
     "time": "2015-08-18T08:59:27+00:00",
     "event": "code_testrun",
@@ -38,8 +41,11 @@
     "source": {
       "repository": "https://github.com/gaia-adm/jenkins-tests-processor",
       "branch": "master",
+      "build_server_uri": "https://circleci.com",
+      "build_server_host": "circleci.com",
       "build_uri": "https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12",
-      "job_name": "jenkins-tests-processor"
+      "job_name": "jenkins-tests-processor",
+      "source_type": "circleci"
     },
     "time": "2015-08-18T08:59:27+00:00",
     "event": "code_testrun",
@@ -64,8 +70,11 @@
     "source": {
       "repository": "https://github.com/gaia-adm/jenkins-tests-processor",
       "branch": "master",
+      "build_server_uri": "https://circleci.com",
+      "build_server_host": "circleci.com",
       "build_uri": "https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12",
-      "job_name": "jenkins-tests-processor"
+      "job_name": "jenkins-tests-processor",
+      "source_type": "circleci"
     },
     "time": "2015-08-18T08:59:27+00:00",
     "event": "code_testrun",

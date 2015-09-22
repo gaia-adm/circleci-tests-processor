@@ -14,6 +14,7 @@ class TestProcessor(unittest.TestCase):
     def test_circleci_tests1(self):
         custom_metadata = {'SCM_BRANCH': 'master', 'SCM_REPO_NAME': 'jenkins-tests-processor',
                            'SCM_URL': 'https://github.com/gaia-adm/jenkins-tests-processor',
+                           'BUILD_SERVER_URI': 'https://circleci.com',
                            'BUILD_URI': 'https://circleci.com/gh/gaia-adm/jenkins-tests-processor/12',
                            'BUILD_NUMBER': '12',
                            'BUILD_STATUS': 'success', 'BUILD_START_TIME': '2015-08-18T08:59:27.444Z'}
