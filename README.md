@@ -1,4 +1,6 @@
-CircleCI build status: [![Circle CI](https://circleci.com/gh/gaia-adm/circleci-tests-processor.svg?style=svg)](https://circleci.com/gh/gaia-adm/circleci-tests-processor)
+[![](https://badge.imagelayers.io/gaiaadm/circleci-tests-processor:latest.svg)](https://imagelayers.io/?images=gaiaadm/circleci-tests-processor:latest 'Get your own badge on imagelayers.io')
+
+*CircleCI:* [![Circle CI](https://circleci.com/gh/gaia-adm/circleci-tests-processor.svg?style=svg)](https://circleci.com/gh/gaia-adm/circleci-tests-processor)
 
 # Circle CI tests data processor
 
