@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/gaia-adm/circleci-tests-processor.svg?style=svg)](https://circleci.com/gh/gaia-adm/circleci-tests-processor) [![](https://badge.imagelayers.io/gaiaadm/circleci-tests-processor:latest.svg)](https://imagelayers.io/?images=gaiaadm/circleci-tests-processor:latest 'Get your own badge on imagelayers.io')
+[![Circle CI](https://circleci.com/gh/gaia-adm/circleci-tests-processor.svg?style=svg)](https://circleci.com/gh/gaia-adm/circleci-tests-processor) [![Codacy Badge](https://api.codacy.com/project/badge/grade/a13ef84e614744b1bfa139f657899ab0)](https://www.codacy.com/app/alexei-led/circleci-tests-processor) [![](https://badge.imagelayers.io/gaiaadm/circleci-tests-processor:latest.svg)](https://imagelayers.io/?images=gaiaadm/circleci-tests-processor:latest 'Get your own badge on imagelayers.io')
 
 # Circle CI tests data processor
 
