@@ -6,20 +6,22 @@ machine:
   services:
     - docker
 dependencies:
+  pre:
+    - sudo apt-get update && sudo apt-get install jq openssl curl
+    # download update_service script
+    - curl -LO https://raw.githubusercontent.com/gaia-adm/gaia-fleet/master/update_service.sh && chmod +x update_service.sh
   override:
     - docker build -t gaiaadm/circleci-tests-processor .
-    - docker tag gaiaadm/circleci-tests-processor gaiaadm/circleci-tests-processor:$CIRCLE_BUILD_NUM
+    - docker tag gaiaadm/circleci-tests-processor gaiaadm/circleci-tests-processor:$CIRCLE_BUILD_NUM-$CIRCLE_BRANCH
+    - docker tag gaiaadm/circleci-tests-processor gaiaadm/circleci-tests-processor:$CIRCLE_BRANCH
 test:
   override:
     - docker run --name unit-test-runner gaiaadm/circleci-tests-processor /bin/sh -c "cd /src/processors/circleci-tests-processor && nosetests --with-xunit"
     - docker cp unit-test-runner:/src/processors/circleci-tests-processor/nosetests.xml $CIRCLE_TEST_REPORTS
 deployment:
-  hub:
-    branch: master
+  continuous:
+    branch: [master, develop, /feature_.*/]
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push gaiaadm/circleci-tests-processor
-general:
-  branches:
-    only:
-      - master
+      - ./update_service.sh -t $CIRCLE_BRANCH -b $CIRCLE_BUILD_NUM -f circleci-tests-processor.service -n circleci-tests-processor

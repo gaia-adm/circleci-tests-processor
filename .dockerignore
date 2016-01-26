@@ -3,4 +3,5 @@
 .gitignore
 __pycache__
 circle.yaml
+circleci-tests-processor.service
 README.md
